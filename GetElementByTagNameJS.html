@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <p>
+        This is paragraph 1
+    </p>
+    <p>
+            This is paragraph 2
+        </p>
+        <p>
+                This is paragraph 4
+            </p>
+            <p>
+                    This is paragraph 3
+                </p>
+    <button onclick="fun()">Click Me</button>
+    <script>
+        function fun() {
+            var paras = document.getElementsByTagName("p");
+            paras[0].style.fontSize = 25;
+            paras[1].style.fontStyle = "italic"
+            paras[3].style.color = "blue";
+            for(var i = 0;i < paras.length;i++) {
+                paras[i].style.color = "yellow";
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style.css"/>
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+    <title>Animate Excample</title>
+</head>
+<body>
+    <!--
+        Jquery DOM manipulations methods
+        text(), html(), attr(), css();
+    -->
+    <h1>Effects in Jquery</h1>
+    <p>This is a paragraph</p>
+    <button id="btn1">Click Me1</button>
+    <button id="btn2">Click Me2</button>
+    <button id="btn3">Click Me3</button>
+    <div class="firstDiv">
+        <p>This is first paragraph in first div</p>
+        <p>This is second paragraph in second div</p>
+    </div>
+</br>
+    <div class="secondDiv">
+        <p>This is third paragraph in second division</p>
+    </div>
+    <br>
+    <div class="thirdDiv">
+        <ul>
+            <li>List Item 1</li>
+            <li>List Item 2</li>
+            <li>List Item 3</li>
+        </ul>
+    </div>
+    <div id="cube" class="myCube">
+        <p>Cube</p>
+    </div>
+
+    <script>
+        $(document).ready(()=>{
+            $('#btn1').click(()=>{
+                var text = $('p').attr();
+                alert(text);
+            });
+        })
+    </script>
+
+</body>
+</html>

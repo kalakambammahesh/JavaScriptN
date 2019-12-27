@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style.css"/>
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+    <title>Animate Excample</title>
+</head>
+<body>
+    <h1>Effects in Jquery</h1>
+    <p>This is a paragraph</p>
+    <button id="btn1">Click Me1</button>
+    <button id="btn2">Click Me2</button>
+    <button id="btn3">Click Me3</button>
+    <div class="firstDiv">
+        <p>This is first paragraph in first div</p>
+        <p>This is second paragraph in second div</p>
+    </div>
+</br>
+    <div class="secondDiv">
+        <p>This is third paragraph in second division</p>
+    </div>
+    <br>
+    <div class="thirdDiv">
+        <ul>
+            <li>List Item 1</li>
+            <li>List Item 2</li>
+            <li>List Item 3</li>
+        </ul>
+    </div>
+    <div id="cube" class="myCube">
+        <p>Cube</p>
+    </div>
+    <script>
+        $(document).ready(()=>{
+            /*$('#btn1').click(()=>{
+                $('.firstDiv').fadeOut();
+            });
+            $('#btn2').click(()=>{
+                $('.firstDiv').fadeIn();
+            });*/
+            
+            //HIDE SHOW TOGGLE
+            /* $('#btn1').click(()=>{
+                $('.firstDiv').hide();
+            });
+            $('#btn2').click(()=>{
+                $('.firstDiv').show();
+            });
+            $('#btn3').click(()=>{
+                $('.firstDiv').toggle();
+            }); */
+            //Mouse Enter and Mouse down
+            /* $('#btn1').mouseenter(()=>{
+                $('.firstDiv').fadeOut();
+            });
+            $('#btn1').mouseleave(()=>{
+                $('.firstDiv').fadeIn();
+            }); */
+            //Toggle with seconds
+           /* $('#btn2').click(()=>{
+                $('.firstDiv').toggle(2000);
+            }); */
+
+            /* $('#btn1').click(()=>{
+                $('.firstDiv').slideUp();
+            });
+            $('#btn2').click(()=>{
+                $('.firstDiv').slideDown();
+            }); */
+            // $('#btn3').click(()=>{
+            //     $('#cube').animate({
+            //         left:"150px",
+            //         opacity:'1',
+            //         width:'100px',
+            //         height:'100px'
+            //     }, 'fast');
+            // });
+            // $('#btn1').click(()=>{
+            //     $('.firstDiv').fadeToggle(2000,()=>{
+            //         alert("working.");
+            //     });
+                
+            // })
+            $('#btn1').click(()=>{
+                $('.firstDiv').fadeOut().fadeIn().slideDown().slideUp();;
+            })
+        });
+    </script>
+</body>
+</html>

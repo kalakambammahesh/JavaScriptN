@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <img onmouseover="changeImage()" onmouseout="oldImage()" src="image1.png" width="300" alt="Image 1"/>
+    
+    <script>
+        function changeImage() {
+            document.getElementsByTagName("img").alt = "/image2.png"
+        }
+        function oldImage() {
+            document.getElementsByTagName("img").src = "/image1.png"
+        }
+    </script>
+</body>
+</html>

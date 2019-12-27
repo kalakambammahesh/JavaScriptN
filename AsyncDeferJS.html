@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        ->normal takes time when a script tag is encountered, waits till script file download and execute
+        ->defer allows to load script, execute  and HTML page  parallel (use in code when code is inter-dependent)
+        ->async allows to load script parallel with DOM, but allows to execute the script at end.
+            --async waits for nothing, nothing waits for async.
+    -->
+    <p>...content before script...</p>
+    <script>
+            document.addEventListener('DOMContentLoaded', () => alert("DOM ready after defer!")); // (2)
+          </script>
+
+<script async src="https://javascript.info/article/script-async-defer/long.js?speed=1"></script>
+<script async src="https://javascript.info/article/script-async-defer/small.js"></script>
+
+<!-- This isn't visible until the script loads -->
+<p>...content after script...</p>
+</body>
+</html>

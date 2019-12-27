@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <input type="radio" id="rd1" name="rdb1">Selected Radio Button 1</input>
+    <br><br>
+    <input type="radio" id="rd2" name="rdb1">Selected Radio Button 2</input>
+    <button onclick="func()">Click Me</button>
+
+    <script>
+        function func() {
+            var rd1 = document.getElementById("rd1");
+            var rd2 = document.getElementById("rd2");
+
+            if(rd1.checked == true)
+                alert("123"+rd1.value);
+            else if(rd2.checked == true)
+                alert("123"+rd2.value);
+            else
+                alert("None of the radio button is selected");
+        }
+    </script>
+</body>
+</html>

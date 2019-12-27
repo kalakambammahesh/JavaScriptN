@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <input placeholder="UserName" type="text" id="uname">
+    <label style="visibility:hidden;color: red;" id="uLable">Invalid username</label>
+    <button onclick="validate()">Submit</button>
+    <script>
+        function validate() {
+            /* 
+            * \d is to specific digits [0-9]
+            * \w is to specific charcater in a word [a-z]
+            * \t is to specify tab
+            * \. is to specify a any character 
+            * + specifies one or more
+            * * specifies zero or more
+            * ? specifies optional
+            * [a-z]{we can specifies n number which it repeats}
+            * [a-z] {a, b} a is starting and b is endin points
+            */ 
+            
+            let uname = document.getElementById("uname");
+        //    let regEx = /E00/i;
+            //Indian Mobile number Validation
+           //let regEx = /^[6-9]\d{9}/;
+          //let regEx = new RegExp("E00", "i");
+          //Email validation
+          let regEx = /^([a-zA-Z0-9\.-_]+)@([a-zA-Z]+).([a-z]){2,10}(.[a-z])?$/
+            if(regEx.test(uname.value)) {
+                alert("Valid username");
+                document.getElementById("uLable").style.color = green;
+            }else{
+                alert("Invalid username");
+                document.getElementById("uLable").style.visibility = "visible";
+            }
+        }
+    </script>
+</body>
+</html>

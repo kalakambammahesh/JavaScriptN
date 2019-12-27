@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h2 id="heading1">Setting up Jquery</h2>
+    <button id="button1">
+        Click Menu
+    </button>
+    <script src="jquery.js"></script>
+
+    <script>
+       $(document).ready(()=>{
+        $('#button1').click(()=>{
+            $('#heading1').fadeToggle(2000)
+        })
+       })
+    </script>
+</body>
+</html>
